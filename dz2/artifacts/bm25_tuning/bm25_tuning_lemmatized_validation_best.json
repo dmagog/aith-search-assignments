@@ -1,0 +1,33 @@
+{
+  "variant": "lemmatized",
+  "split": "validation",
+  "optimize": "AP",
+  "best": {
+    "variant": "lemmatized",
+    "split": "validation",
+    "k1": 1.2,
+    "b": 0.75,
+    "P@1": 0.46,
+    "P@10": 0.22800000000000004,
+    "P@20": 0.1635000000000001,
+    "AP": 0.16726718088312698,
+    "nDCG@20": 0.34600379672588205,
+    "build_seconds": 7.343239333000383,
+    "total_query_seconds": 53.602098875016964,
+    "avg_query_seconds": 0.5360209887501697,
+    "used_cached_documents": true,
+    "used_cached_queries": true,
+    "preprocess_seconds": 3.1665690830013773
+  },
+  "summary_csv": "dz2/artifacts/bm25_tuning/bm25_tuning_lemmatized_validation.csv",
+  "best_run_path": "dz2/artifacts/bm25_tuning/bm25_tuning_lemmatized_validation_best_run.trec",
+  "grid_size": 4,
+  "k1_values": [
+    1.2,
+    1.5
+  ],
+  "b_values": [
+    0.6,
+    0.75
+  ]
+}

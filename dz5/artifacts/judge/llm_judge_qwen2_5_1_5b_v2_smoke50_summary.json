@@ -1,0 +1,96 @@
+{
+  "judge_file": "C:\\Users\\Georgy\\Source\\dz5\\artifacts\\judge\\llm_judge_qwen2_5_1_5b_v2_smoke50.jsonl",
+  "total": 500,
+  "by_experiment": {
+    "qwen2_5_1_5b_instruct_closed_book": {
+      "count": 50,
+      "correct": 4,
+      "incorrect": 40,
+      "partially_correct": 6,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.08,
+      "correct_or_partial_rate": 0.2
+    },
+    "qwen2_5_1_5b_instruct_mirage_mixed": {
+      "count": 50,
+      "correct": 28,
+      "incorrect": 3,
+      "partially_correct": 19,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.56,
+      "correct_or_partial_rate": 0.94
+    },
+    "qwen2_5_1_5b_instruct_oracle": {
+      "count": 50,
+      "correct": 27,
+      "incorrect": 2,
+      "partially_correct": 20,
+      "unanswerable_or_bad_context": 1,
+      "correct_rate": 0.54,
+      "correct_or_partial_rate": 0.94
+    },
+    "qwen2_5_1_5b_instruct_top1_dense": {
+      "count": 50,
+      "correct": 23,
+      "incorrect": 12,
+      "partially_correct": 9,
+      "unanswerable_or_bad_context": 6,
+      "correct_rate": 0.46,
+      "correct_or_partial_rate": 0.64
+    },
+    "qwen2_5_1_5b_instruct_top1_mixture": {
+      "count": 50,
+      "correct": 22,
+      "incorrect": 12,
+      "partially_correct": 12,
+      "unanswerable_or_bad_context": 4,
+      "correct_rate": 0.44,
+      "correct_or_partial_rate": 0.68
+    },
+    "qwen2_5_1_5b_instruct_top5_dense": {
+      "count": 50,
+      "correct": 27,
+      "incorrect": 5,
+      "partially_correct": 18,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.54,
+      "correct_or_partial_rate": 0.9
+    },
+    "qwen2_5_1_5b_instruct_top5_mixture": {
+      "count": 50,
+      "correct": 25,
+      "incorrect": 6,
+      "partially_correct": 19,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.5,
+      "correct_or_partial_rate": 0.88
+    },
+    "roberta_oracle": {
+      "count": 50,
+      "correct": 29,
+      "incorrect": 2,
+      "partially_correct": 19,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.58,
+      "correct_or_partial_rate": 0.96
+    },
+    "roberta_top1_dense": {
+      "count": 50,
+      "correct": 21,
+      "incorrect": 14,
+      "partially_correct": 15,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.42,
+      "correct_or_partial_rate": 0.72
+    },
+    "roberta_top1_mixture": {
+      "count": 50,
+      "correct": 21,
+      "incorrect": 11,
+      "partially_correct": 18,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.42,
+      "correct_or_partial_rate": 0.78
+    }
+  }
+}

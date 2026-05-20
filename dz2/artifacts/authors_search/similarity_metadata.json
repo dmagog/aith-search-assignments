@@ -1,0 +1,19 @@
+{
+  "top_k": 3,
+  "paragraphs_csv": "dz2/artifacts/authors_search/paragraphs.csv",
+  "matches_csv": "dz2/artifacts/authors_search/similarity_matches.csv",
+  "setups": [
+    "within_tolstoy",
+    "within_dostoevsky",
+    "tolstoy_to_dostoevsky",
+    "dostoevsky_to_tolstoy"
+  ],
+  "methods": [
+    "tfidf",
+    "bm25"
+  ],
+  "idf_schemes": [
+    "local",
+    "global"
+  ]
+}

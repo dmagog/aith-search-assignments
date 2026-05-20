@@ -1,0 +1,6 @@
+{
+  "parquet_path": "dz2/data/mirage/train.parquet",
+  "documents_csv": "dz2/artifacts/mirage/documents.csv",
+  "queries_csv": "dz2/artifacts/mirage/queries.csv",
+  "qrels_path": "dz2/artifacts/mirage/qrels.trec"
+}

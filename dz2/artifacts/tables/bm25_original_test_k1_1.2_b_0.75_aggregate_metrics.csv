@@ -1,0 +1,6 @@
+run_id,measure,value
+bm25_original_test_k1_1.2_b_0.75,P@10,0.23500000000000004
+bm25_original_test_k1_1.2_b_0.75,P@20,0.17
+bm25_original_test_k1_1.2_b_0.75,nDCG@20,0.3773809095188678
+bm25_original_test_k1_1.2_b_0.75,P@1,0.49
+bm25_original_test_k1_1.2_b_0.75,AP,0.19735275744214484

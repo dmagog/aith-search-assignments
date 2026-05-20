@@ -1,0 +1,16 @@
+{
+  "run_id": "tfidf_stemmed_test",
+  "method": "tfidf",
+  "variant": "stemmed",
+  "split": "test",
+  "documents": 99987,
+  "queries": 100,
+  "top_k": 1000,
+  "build_seconds": 8.458162999999331,
+  "preprocess_seconds": 162.4513342499995,
+  "total_query_seconds": 23.418582532987784,
+  "avg_query_seconds": 0.23418582532987783,
+  "k1": null,
+  "b": null,
+  "run_path": "dz2/artifacts/runs/tfidf_stemmed_test.trec"
+}

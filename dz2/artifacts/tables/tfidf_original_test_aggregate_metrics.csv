@@ -1,0 +1,6 @@
+run_id,measure,value
+tfidf_original_test,nDCG@20,0.3458476145910517
+tfidf_original_test,P@10,0.212
+tfidf_original_test,P@1,0.44
+tfidf_original_test,AP,0.17944138159498063
+tfidf_original_test,P@20,0.1505

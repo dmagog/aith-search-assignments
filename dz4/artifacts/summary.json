@@ -1,0 +1,352 @@
+{
+  "config": {
+    "device": "cpu",
+    "batch_size": 128,
+    "dense_top_k_wikir": 1000,
+    "dense_top_k_mirage": 100,
+    "mirage_bm25_top_k": 100,
+    "rerank_ks": [
+      10,
+      20,
+      50,
+      100
+    ],
+    "alpha_step": 0.05,
+    "models": [
+      "all-MiniLM-L6-v2",
+      "paraphrase-multilingual-MiniLM-L12-v2"
+    ],
+    "random_seed": 42,
+    "limits": {
+      "wikir_train": null,
+      "wikir_test": null,
+      "mirage_test": null
+    }
+  },
+  "previous_best": {
+    "assignment2": {
+      "wikir_best": {
+        "run_id": "bm25_stemmed_test_k1_1.5_b_0.75",
+        "method": "bm25",
+        "variant": "stemmed",
+        "P@1": 0.51,
+        "P@10": 0.2350000000000001,
+        "P@20": 0.171,
+        "AP": 0.2020383873533729,
+        "nDCG@20": 0.3891771630989397,
+        "build_seconds": 9.985592625002027,
+        "preprocess_seconds": 162.11210483299874,
+        "total_query_seconds": 30.88045016597971,
+        "avg_query_seconds": 0.3088045016597971
+      },
+      "mirage_best": {
+        "run_id": "mirage_bm25_stemmed_k1_1.5_b_0.75",
+        "method": "bm25",
+        "variant": "stemmed",
+        "k1": 1.5,
+        "b": 0.75,
+        "preprocess_seconds": 79.0803880829917,
+        "build_seconds": 4.718187749997014,
+        "avg_query_seconds": 0.0007965225145444,
+        "P@10": 0.0650529100529144,
+        "AP": 0.4106095852421771,
+        "nDCG@20": 0.4555128048555068,
+        "P@1": 0.3465608465608465,
+        "P@20": 0.0346494708994734
+      }
+    },
+    "assignment3": {
+      "wikir_best": {
+        "model_key": "feature_augmented_pairlogit",
+        "model_name": "CatBoost с расширенными признаками (PairLogit)",
+        "feature_columns": [
+          "query_length",
+          "document_length",
+          "bm25_score",
+          "bm25_rank",
+          "reciprocal_bm25_rank",
+          "bm25_per_query_term",
+          "matched_terms",
+          "coverage_ratio",
+          "sum_tf",
+          "mean_tf",
+          "max_tf",
+          "sum_idf",
+          "mean_idf",
+          "max_idf",
+          "matched_idf_sum",
+          "best_span",
+          "span_reciprocal",
+          "query_bigram_hits",
+          "exact_match_fraction"
+        ],
+        "best_iteration": 14,
+        "validation_metrics": {
+          "ap": 0.30974850302157525,
+          "ndcg@10": 0.3916153592906479,
+          "ndcg@20": 0.4093386565392871
+        },
+        "test_metrics": {
+          "ap": 0.36526149166853517,
+          "ndcg@10": 0.43986034943600233,
+          "ndcg@20": 0.4773309166889942
+        }
+      },
+      "mirage_best": {
+        "model_key": "enhanced_with_wiki_signals",
+        "model_name": "Модель с признаками заголовка, текста и сигналами Wikipedia",
+        "feature_columns": [
+          "query_length",
+          "title_length",
+          "body_length",
+          "title_matches",
+          "body_matches",
+          "title_coverage_ratio",
+          "body_coverage_ratio",
+          "title_sum_tf",
+          "title_max_tf",
+          "body_sum_tf",
+          "body_max_tf",
+          "body_mean_tf",
+          "body_sum_idf",
+          "body_max_idf",
+          "body_best_span",
+          "body_span_reciprocal",
+          "title_exact_fraction",
+          "log_pageviews_sum_12m",
+          "pageviews_mean_12m",
+          "log_incoming_links",
+          "redirects"
+        ],
+        "best_iteration": 289,
+        "validation_metrics": {
+          "ap": 0.7306932966023875,
+          "ndcg@3": 0.7431659011497473,
+          "ndcg@5": 0.8020476287778154
+        },
+        "test_metrics": {
+          "ap": 0.7356420283469194,
+          "ndcg@3": 0.7470666100723616,
+          "ndcg@5": 0.8055120679385931
+        }
+      }
+    }
+  },
+  "dense_retrieval": [
+    {
+      "dataset": "WikIR test",
+      "model": "all-MiniLM-L6-v2",
+      "corpus_size": 99987,
+      "query_count": 100,
+      "top_k": 1000,
+      "metrics": {
+        "P@1": 0.65,
+        "P@10": 0.24300000000000008,
+        "P@20": 0.17050000000000004,
+        "MAP@20": 0.1929335590217894,
+        "nDCG@20": 0.47054679775902003
+      },
+      "doc_encode_seconds": 6524.294399502999,
+      "query_encode_seconds": 15.221841583000241,
+      "avg_query_seconds": 0.0016300616700118554
+    },
+    {
+      "dataset": "WikIR test",
+      "model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "corpus_size": 99987,
+      "query_count": 100,
+      "top_k": 1000,
+      "metrics": {
+        "P@1": 0.44,
+        "P@10": 0.13,
+        "P@20": 0.09000000000000002,
+        "MAP@20": 0.09516422318365972,
+        "nDCG@20": 0.2757396880066739
+      },
+      "doc_encode_seconds": 1972.3364674530003,
+      "query_encode_seconds": 0.15432670900008816,
+      "avg_query_seconds": 0.0019017204100055096
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "all-MiniLM-L6-v2",
+      "corpus_size": 36950,
+      "query_count": 1513,
+      "top_k": 100,
+      "metrics": {
+        "P@1": 0.5922009253139459,
+        "P@10": 0.11288830138797093,
+        "P@20": 0.05816259087904826,
+        "MAP@20": 0.7038679380934992,
+        "nDCG@20": 0.7694081061011642
+      },
+      "doc_encode_seconds": 1795.1452788359984,
+      "query_encode_seconds": 2.679489583000759,
+      "avg_query_seconds": 0.0004905506444143577
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "corpus_size": 36950,
+      "query_count": 1513,
+      "top_k": 100,
+      "metrics": {
+        "P@1": 0.5109054857898215,
+        "P@10": 0.09266358228684732,
+        "P@20": 0.04907468605419696,
+        "MAP@20": 0.58414548048948,
+        "nDCG@20": 0.6468980553225935
+      },
+      "doc_encode_seconds": 685.5026413340001,
+      "query_encode_seconds": 4.236205250001149,
+      "avg_query_seconds": 0.0004514899762067055
+    }
+  ],
+  "reranking": [
+    {
+      "dataset": "WikIR test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 10,
+      "metrics": {
+        "P@1": 0.48,
+        "P@10": 0.177,
+        "P@20": 0.1295,
+        "MAP@20": 0.15794067064018044,
+        "nDCG@20": 0.3412706152427078
+      },
+      "avg_query_seconds": 0.0022987149500295345
+    },
+    {
+      "dataset": "WikIR test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 20,
+      "metrics": {
+        "P@1": 0.53,
+        "P@10": 0.20499999999999996,
+        "P@20": 0.1295,
+        "MAP@20": 0.16860375516173837,
+        "nDCG@20": 0.36255035439902383
+      },
+      "avg_query_seconds": 0.0012577983400296944
+    },
+    {
+      "dataset": "WikIR test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 50,
+      "metrics": {
+        "P@1": 0.53,
+        "P@10": 0.212,
+        "P@20": 0.1365,
+        "MAP@20": 0.17111511427873802,
+        "nDCG@20": 0.3720964046578915
+      },
+      "avg_query_seconds": 0.0033364612200603005
+    },
+    {
+      "dataset": "WikIR test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 100,
+      "metrics": {
+        "P@1": 0.53,
+        "P@10": 0.225,
+        "P@20": 0.1465,
+        "MAP@20": 0.18066304294871205,
+        "nDCG@20": 0.39097642966120216
+      },
+      "avg_query_seconds": 0.0014260887499676755
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 10,
+      "metrics": {
+        "P@1": 0.46860541969596825,
+        "P@10": 0.07422339722405816,
+        "P@20": 0.03912756113681428,
+        "MAP@20": 0.5157549977471826,
+        "nDCG@20": 0.552354515002828
+      },
+      "avg_query_seconds": 3.781870192044396e-05
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 20,
+      "metrics": {
+        "P@1": 0.48116325181758096,
+        "P@10": 0.07805684071381362,
+        "P@20": 0.03912756113681428,
+        "MAP@20": 0.531615718312678,
+        "nDCG@20": 0.5651983676022534
+      },
+      "avg_query_seconds": 1.9701746197574766e-05
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 50,
+      "metrics": {
+        "P@1": 0.5029742233972241,
+        "P@10": 0.0839391936549901,
+        "P@20": 0.04226701916721745,
+        "MAP@20": 0.5638005808548361,
+        "nDCG@20": 0.6010761368911518
+      },
+      "avg_query_seconds": 0.0004049001910204099
+    },
+    {
+      "dataset": "MIRAGE test",
+      "model": "all-MiniLM-L6-v2",
+      "k": 100,
+      "metrics": {
+        "P@1": 0.5102445472571051,
+        "P@10": 0.08592200925313946,
+        "P@20": 0.043489755452742904,
+        "MAP@20": 0.5754899600219521,
+        "nDCG@20": 0.6145329094799762
+      },
+      "avg_query_seconds": 0.0006074843839842414
+    }
+  ],
+  "mixture": {
+    "model": "all-MiniLM-L6-v2",
+    "selection_metric": "nDCG@20",
+    "best_alpha": 0.1,
+    "best_train_metrics": {
+      "P@1": 0.7270516717325228,
+      "P@10": 0.2660790273556231,
+      "P@20": 0.187355623100304,
+      "MAP@20": 0.21025852950488558,
+      "nDCG@20": 0.49137770447533924
+    },
+    "alpha_curve": [],
+    "results": [
+      {
+        "dataset": "WikIR test",
+        "model": "all-MiniLM-L6-v2",
+        "alpha": 0.1,
+        "metrics": {
+          "P@1": 0.68,
+          "P@10": 0.262,
+          "P@20": 0.17950000000000002,
+          "MAP@20": 0.2105296598661002,
+          "nDCG@20": 0.490006301164396
+        },
+        "avg_query_seconds": 1.4310860015029903e-05
+      },
+      {
+        "dataset": "MIRAGE test",
+        "model": "all-MiniLM-L6-v2",
+        "alpha": 0.1,
+        "metrics": {
+          "P@1": 0.6133509583608724,
+          "P@10": 0.11407799074686056,
+          "P@20": 0.05849306014540648,
+          "MAP@20": 0.7194244956224416,
+          "nDCG@20": 0.7820148943393853
+        },
+        "avg_query_seconds": 1.2273736283003358e-05
+      }
+    ]
+  }
+}

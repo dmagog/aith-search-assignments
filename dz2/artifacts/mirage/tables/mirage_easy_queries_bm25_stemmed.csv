@@ -1,0 +1,16 @@
+query_id,AP,P@1,P@10,P@20,nDCG@20,source,query_length_words,relevant_passages,pool_size,query,length_bucket
+00367852-4217-48b1-9313-2c21ea592610,1.0,1.0,0.3,0.15,1.0,naturalqa,7,3,5,the sunken spanish treasure fleet (florida usa),6-10
+004c15be-5a80-4261-a93e-5e92d5e96ac1,1.0,1.0,0.1,0.05,1.0,naturalqa,8,1,5,when did mac miller release best day ever,6-10
+0055e39a-cde5-4c17-85c4-4538a4bfb01f,1.0,1.0,0.1,0.05,1.0,popqa,10,1,5,Who was the producer of Tarzan and the Great River?,6-10
+00577db7-7b43-4364-b29e-ff4cb606c8ed,1.0,1.0,0.1,0.05,1.0,naturalqa,6,1,5,what is software asset management (sam),6-10
+0066d36e-f0e8-4cbb-a302-4c4d0b0498f2,1.0,1.0,0.1,0.05,1.0,triviaqa,16,1,5,"Derived from the name of an ancient King of Pontus, what is the practice of Mithridatism?",11+
+00e02ea6-9cca-4c59-9425-b2454cb95776,1.0,1.0,0.1,0.05,1.0,naturalqa,8,1,5,when do we celebrate the modern olympic games,6-10
+00e67f3c-dd68-4322-8467-5840f5592467,1.0,1.0,0.1,0.05,1.0,popqa,9,1,5,Who is the father of George II of Brieg?,6-10
+012665a7-a828-412a-9a4f-403f998eb36c,1.0,1.0,0.1,0.05,1.0,popqa,7,1,5,Who is the author of Buried Thunder?,6-10
+0153cd9c-7536-4ed5-9f1f-0dbf8472a40d,1.0,1.0,0.1,0.05,1.0,naturalqa,12,1,5,at canterbury cathedral the shrine of is today marked by a single,11+
+0177bf17-6a23-45b0-a27d-1cd9acc1290c,1.0,1.0,0.1,0.05,1.0,naturalqa,9,1,5,who played betsy stewart on as the world turns,6-10
+0185d40b-be25-40e4-aad8-0294ac401cfd,1.0,1.0,0.1,0.05,1.0,ifqa,27,1,5,"If the developmental issues with the Agena B stage had been resolved on schedule, when would the U.S. Air Force have initiated the flights of Ranger 3?",11+
+01bbcb80-eac2-45e9-90e1-00d67dabb6bb,1.0,1.0,0.1,0.05,1.0,naturalqa,10,1,5,when did bert and ernie first appear on sesame street,6-10
+01eaf75a-fc8a-4681-9d13-17919284202e,1.0,1.0,0.1,0.05,1.0,popqa,11,1,5,Who is the author of It's Not an All Night Fair?,11+
+01fd9228-b964-461c-87b6-930557569010,1.0,1.0,0.1,0.05,1.0,ifqa,22,1,5,"If William Parks had accompanied Levi Sternberg on his expedition earlier, which part of the dinosaur's body would they have discovered together?",11+
+0210b1b1-43ec-4b18-9859-9f8ea31269d3,1.0,1.0,0.1,0.05,1.0,triviaqa,14,1,5,"After 2007, which boat class was not run as a World Rowing Championship event?",11+

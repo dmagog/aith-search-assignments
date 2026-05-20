@@ -1,0 +1,38 @@
+{
+  "prediction_file": "artifacts/predictions/roberta_top1_mixture_distilbert_50.jsonl",
+  "count": 50,
+  "aggregate": {
+    "squad_em": 0.46,
+    "squad_f1": 0.5230769230769231,
+    "mirage_em_strict": 0.46,
+    "mirage_em_loose": 0.58
+  },
+  "by_source": {
+    "popqa": {
+      "count": 50,
+      "squad_em": 0.46,
+      "squad_f1": 0.5230769230769231,
+      "mirage_em_strict": 0.46,
+      "mirage_em_loose": 0.58
+    }
+  },
+  "bootstrap_ci": {
+    "squad_em": {
+      "low": 0.3395,
+      "high": 0.6
+    },
+    "squad_f1": {
+      "low": 0.4006,
+      "high": 0.646076923076923
+    },
+    "mirage_em_strict": {
+      "low": 0.3395,
+      "high": 0.6
+    },
+    "mirage_em_loose": {
+      "low": 0.44,
+      "high": 0.7005000000000001
+    }
+  },
+  "metric_note": "MIRAGE EM metrics use local fallback unless an official evaluator is wired in later."
+}

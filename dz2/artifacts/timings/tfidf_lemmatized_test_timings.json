@@ -1,0 +1,18 @@
+{
+  "run_id": "tfidf_lemmatized_test",
+  "method": "tfidf",
+  "variant": "lemmatized",
+  "split": "test",
+  "documents": 99987,
+  "queries": 100,
+  "top_k": 1000,
+  "build_seconds": 5.704734582999663,
+  "preprocess_seconds": 64.84574666700064,
+  "total_query_seconds": 6.081627872983518,
+  "avg_query_seconds": 0.06081627872983517,
+  "k1": null,
+  "b": null,
+  "used_cached_documents": false,
+  "used_cached_queries": false,
+  "run_path": "dz2/artifacts/runs/tfidf_lemmatized_test.trec"
+}

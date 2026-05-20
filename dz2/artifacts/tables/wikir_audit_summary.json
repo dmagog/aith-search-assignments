@@ -1,0 +1,94 @@
+{
+  "dataset_root": "dz1/dz1/wikIR1k/wikIR1k",
+  "documents": {
+    "documents": 99987,
+    "empty_documents": 0,
+    "tokens": 19963076,
+    "avg_document_length": 199.6567153729985,
+    "min_document_length": 13,
+    "max_document_length": 200
+  },
+  "splits": {
+    "train": {
+      "queries": {
+        "queries": 1645,
+        "avg_query_length": 1.9434650455927052,
+        "median_query_length": 2,
+        "min_query_length": 1,
+        "max_query_length": 10
+      },
+      "qrels": {
+        "rows": 59462,
+        "relevance_distribution": {
+          "2": 1645,
+          "1": 57817
+        },
+        "queries_with_qrels": 1645,
+        "avg_relevant_docs_per_query": 36.14711246200608,
+        "median_relevant_docs_per_query": 10,
+        "min_relevant_docs_per_query": 5,
+        "max_relevant_docs_per_query": 6119
+      },
+      "sanity_checks": {
+        "empty_queries": 0,
+        "queries_without_qrels": 0,
+        "qrels_without_queries": 0,
+        "qrels_missing_documents": 0
+      }
+    },
+    "validation": {
+      "queries": {
+        "queries": 100,
+        "avg_query_length": 2.02,
+        "median_query_length": 2.0,
+        "min_query_length": 1,
+        "max_query_length": 5
+      },
+      "qrels": {
+        "rows": 1936,
+        "relevance_distribution": {
+          "2": 100,
+          "1": 1836
+        },
+        "queries_with_qrels": 100,
+        "avg_relevant_docs_per_query": 19.36,
+        "median_relevant_docs_per_query": 10.0,
+        "min_relevant_docs_per_query": 6,
+        "max_relevant_docs_per_query": 290
+      },
+      "sanity_checks": {
+        "empty_queries": 0,
+        "queries_without_qrels": 0,
+        "qrels_without_queries": 0,
+        "qrels_missing_documents": 0
+      }
+    },
+    "test": {
+      "queries": {
+        "queries": 100,
+        "avg_query_length": 1.72,
+        "median_query_length": 2.0,
+        "min_query_length": 1,
+        "max_query_length": 5
+      },
+      "qrels": {
+        "rows": 2006,
+        "relevance_distribution": {
+          "2": 100,
+          "1": 1906
+        },
+        "queries_with_qrels": 100,
+        "avg_relevant_docs_per_query": 20.06,
+        "median_relevant_docs_per_query": 10.0,
+        "min_relevant_docs_per_query": 6,
+        "max_relevant_docs_per_query": 348
+      },
+      "sanity_checks": {
+        "empty_queries": 0,
+        "queries_without_qrels": 0,
+        "qrels_without_queries": 0,
+        "qrels_missing_documents": 0
+      }
+    }
+  }
+}

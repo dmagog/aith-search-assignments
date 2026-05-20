@@ -1,0 +1,4 @@
+split,queries,avg_query_length,median_query_length,min_query_length,max_query_length,qrels_rows,avg_relevant_docs_per_query,median_relevant_docs_per_query,min_relevant_docs_per_query,max_relevant_docs_per_query,empty_queries,queries_without_qrels,qrels_without_queries,qrels_missing_documents
+train,1645,1.9434650455927052,2,1,10,59462,36.14711246200608,10,5,6119,0,0,0,0
+validation,100,2.02,2.0,1,5,1936,19.36,10.0,6,290,0,0,0,0
+test,100,1.72,2.0,1,5,2006,20.06,10.0,6,348,0,0,0,0

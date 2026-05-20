@@ -1,0 +1,13 @@
+metric,value
+mirage_rows,7560
+eligible_test_qids,1513
+sample_qids,1000
+written_examples,1000
+seed,42
+missing_ranker_passages_ha4_mixture,0
+missing_ranker_passages_ha4_dense,0
+sample_source_drop,10
+sample_source_ifqa,33
+sample_source_naturalqa,473
+sample_source_popqa,407
+sample_source_triviaqa,77

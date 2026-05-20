@@ -1,0 +1,13 @@
+{
+  "run_id": "mirage_tfidf_stemmed",
+  "method": "tfidf",
+  "variant": "stemmed",
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 37799,
+  "queries": 7560,
+  "preprocess_seconds": 78.0406761669874,
+  "build_seconds": 3.980608542013215,
+  "avg_query_seconds": 0.0009123716046209059,
+  "run_path": "dz2/artifacts/mirage/runs/mirage_tfidf_stemmed.trec"
+}

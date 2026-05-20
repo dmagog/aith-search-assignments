@@ -1,0 +1,13 @@
+{
+  "run_id": "mirage_tfidf_original",
+  "method": "tfidf",
+  "variant": "original",
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 37799,
+  "queries": 7560,
+  "preprocess_seconds": 1.0218517920002341,
+  "build_seconds": 4.3171542920026695,
+  "avg_query_seconds": 0.001077515514157192,
+  "run_path": "dz2/artifacts/mirage/runs/mirage_tfidf_original.trec"
+}

@@ -1,0 +1,132 @@
+{
+  "judge_file": "C:\\Users\\Georgy\\Source\\dz5\\artifacts\\judge\\llm_judge_qwen2_5_1_5b_v2.jsonl",
+  "total": 14000,
+  "by_experiment": {
+    "qwen2_5_1_5b_instruct_closed_book": {
+      "count": 1000,
+      "correct": 86,
+      "incorrect": 725,
+      "partially_correct": 186,
+      "unanswerable_or_bad_context": 3,
+      "correct_rate": 0.086,
+      "correct_or_partial_rate": 0.272
+    },
+    "qwen2_5_1_5b_instruct_mirage_mixed": {
+      "count": 1000,
+      "correct": 480,
+      "incorrect": 135,
+      "partially_correct": 383,
+      "unanswerable_or_bad_context": 2,
+      "correct_rate": 0.48,
+      "correct_or_partial_rate": 0.863
+    },
+    "qwen2_5_1_5b_instruct_oracle": {
+      "count": 1000,
+      "correct": 522,
+      "incorrect": 108,
+      "partially_correct": 369,
+      "unanswerable_or_bad_context": 1,
+      "correct_rate": 0.522,
+      "correct_or_partial_rate": 0.891
+    },
+    "qwen2_5_1_5b_instruct_top1_dense": {
+      "count": 1000,
+      "correct": 343,
+      "incorrect": 372,
+      "partially_correct": 272,
+      "unanswerable_or_bad_context": 13,
+      "correct_rate": 0.343,
+      "correct_or_partial_rate": 0.615
+    },
+    "qwen2_5_1_5b_instruct_top1_mixture": {
+      "count": 1000,
+      "correct": 344,
+      "incorrect": 363,
+      "partially_correct": 280,
+      "unanswerable_or_bad_context": 13,
+      "correct_rate": 0.344,
+      "correct_or_partial_rate": 0.624
+    },
+    "qwen2_5_1_5b_instruct_top5_dense": {
+      "count": 1000,
+      "correct": 409,
+      "incorrect": 246,
+      "partially_correct": 345,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.409,
+      "correct_or_partial_rate": 0.754
+    },
+    "qwen2_5_1_5b_instruct_top5_mixture": {
+      "count": 1000,
+      "correct": 393,
+      "incorrect": 251,
+      "partially_correct": 355,
+      "unanswerable_or_bad_context": 1,
+      "correct_rate": 0.393,
+      "correct_or_partial_rate": 0.748
+    },
+    "roberta_oracle": {
+      "count": 1000,
+      "correct": 479,
+      "incorrect": 146,
+      "partially_correct": 375,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.479,
+      "correct_or_partial_rate": 0.854
+    },
+    "roberta_top1_dense": {
+      "count": 1000,
+      "correct": 302,
+      "incorrect": 384,
+      "partially_correct": 314,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.302,
+      "correct_or_partial_rate": 0.616
+    },
+    "roberta_top1_mixture": {
+      "count": 1000,
+      "correct": 299,
+      "incorrect": 377,
+      "partially_correct": 324,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.299,
+      "correct_or_partial_rate": 0.623
+    },
+    "t5gemma2_270m_squad_lora_closed_book": {
+      "count": 1000,
+      "correct": 2,
+      "incorrect": 758,
+      "partially_correct": 240,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.002,
+      "correct_or_partial_rate": 0.242
+    },
+    "t5gemma2_270m_squad_lora_oracle": {
+      "count": 1000,
+      "correct": 1,
+      "incorrect": 761,
+      "partially_correct": 238,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.001,
+      "correct_or_partial_rate": 0.239
+    },
+    "t5gemma2_270m_squad_lora_top1_dense": {
+      "count": 1000,
+      "correct": 1,
+      "incorrect": 761,
+      "partially_correct": 238,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.001,
+      "correct_or_partial_rate": 0.239
+    },
+    "t5gemma2_270m_squad_lora_top1_mixture": {
+      "count": 1000,
+      "correct": 1,
+      "incorrect": 761,
+      "partially_correct": 238,
+      "unanswerable_or_bad_context": 0,
+      "correct_rate": 0.001,
+      "correct_or_partial_rate": 0.239
+    }
+  }
+}

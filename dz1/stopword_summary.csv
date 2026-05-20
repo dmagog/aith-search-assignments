@@ -1,0 +1,4 @@
+metric,value
+stopword_occurrences,8101999
+stopword_share,0.4058
+top30_all_stopwords,False

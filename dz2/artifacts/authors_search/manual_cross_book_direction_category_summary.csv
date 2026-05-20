@@ -1,0 +1,8 @@
+direction,method,category,pairs
+dostoevsky_to_tolstoy,bm25,ambiguous,2
+dostoevsky_to_tolstoy,bm25,thematic,2
+dostoevsky_to_tolstoy,tfidf,surface_lexical,1
+tolstoy_to_dostoevsky,bm25,ambiguous,1
+tolstoy_to_dostoevsky,bm25,surface_lexical,2
+tolstoy_to_dostoevsky,bm25,thematic,2
+tolstoy_to_dostoevsky,tfidf,surface_lexical,2

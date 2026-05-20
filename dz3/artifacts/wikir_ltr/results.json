@@ -1,0 +1,129 @@
+{
+  "dataset": {
+    "name": "WikIR en1k",
+    "train_sample_rows": 17152,
+    "validation_rows": 10000,
+    "test_rows": 10000,
+    "train_queries": 1240,
+    "validation_queries": 100,
+    "test_queries": 100
+  },
+  "baselines": {
+    "bm25_top100_validation": {
+      "ap": 0.2644329620777895,
+      "ndcg@10": 0.32855878919285814,
+      "ndcg@20": 0.3579551771951751
+    },
+    "bm25_top100_test": {
+      "ap": 0.31670112481133134,
+      "ndcg@10": 0.386984074558979,
+      "ndcg@20": 0.4201579045431291
+    },
+    "assignment2_best_bm25": {
+      "ap": 0.2020383873533729,
+      "ndcg@20": 0.3891771630989397
+    }
+  },
+  "results": [
+    {
+      "model_key": "feature_augmented_yetirank",
+      "model_name": "CatBoost \u0441 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430\u043c\u0438 (YetiRank)",
+      "feature_columns": [
+        "query_length",
+        "document_length",
+        "bm25_score",
+        "bm25_rank",
+        "reciprocal_bm25_rank",
+        "bm25_per_query_term",
+        "matched_terms",
+        "coverage_ratio",
+        "sum_tf",
+        "mean_tf",
+        "max_tf",
+        "sum_idf",
+        "mean_idf",
+        "max_idf",
+        "matched_idf_sum",
+        "best_span",
+        "span_reciprocal",
+        "query_bigram_hits",
+        "exact_match_fraction"
+      ],
+      "best_iteration": 185,
+      "validation_metrics": {
+        "ap": 0.19922664672002832,
+        "ndcg@10": 0.2569346485177469,
+        "ndcg@20": 0.2800695902854491
+      },
+      "test_metrics": {
+        "ap": 0.2507921057182891,
+        "ndcg@10": 0.3045869224180566,
+        "ndcg@20": 0.3241701680540382
+      }
+    },
+    {
+      "model_key": "feature_augmented_pairlogit",
+      "model_name": "CatBoost \u0441 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430\u043c\u0438 (PairLogit)",
+      "feature_columns": [
+        "query_length",
+        "document_length",
+        "bm25_score",
+        "bm25_rank",
+        "reciprocal_bm25_rank",
+        "bm25_per_query_term",
+        "matched_terms",
+        "coverage_ratio",
+        "sum_tf",
+        "mean_tf",
+        "max_tf",
+        "sum_idf",
+        "mean_idf",
+        "max_idf",
+        "matched_idf_sum",
+        "best_span",
+        "span_reciprocal",
+        "query_bigram_hits",
+        "exact_match_fraction"
+      ],
+      "best_iteration": 14,
+      "validation_metrics": {
+        "ap": 0.30974850302157525,
+        "ndcg@10": 0.3916153592906479,
+        "ndcg@20": 0.4093386565392871
+      },
+      "test_metrics": {
+        "ap": 0.36526149166853517,
+        "ndcg@10": 0.43986034943600233,
+        "ndcg@20": 0.4773309166889942
+      }
+    },
+    {
+      "model_key": "bm25_reconstruction",
+      "model_name": "CatBoost \u043f\u043e \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u0430\u043c BM25",
+      "feature_columns": [
+        "query_length",
+        "document_length",
+        "matched_terms",
+        "coverage_ratio",
+        "sum_tf",
+        "mean_tf",
+        "max_tf",
+        "sum_idf",
+        "mean_idf",
+        "max_idf",
+        "matched_idf_sum"
+      ],
+      "best_iteration": 96,
+      "validation_metrics": {
+        "ap": 0.2996303001867913,
+        "ndcg@10": 0.389121714583452,
+        "ndcg@20": 0.39990774079700375
+      },
+      "test_metrics": {
+        "ap": 0.3318862273417223,
+        "ndcg@10": 0.3909863795890843,
+        "ndcg@20": 0.4192737033960896
+      }
+    }
+  ]
+}

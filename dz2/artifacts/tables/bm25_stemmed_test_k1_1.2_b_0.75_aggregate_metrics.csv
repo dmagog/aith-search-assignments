@@ -1,0 +1,6 @@
+run_id,measure,value
+bm25_stemmed_test_k1_1.2_b_0.75,P@10,0.2370000000000001
+bm25_stemmed_test_k1_1.2_b_0.75,P@1,0.51
+bm25_stemmed_test_k1_1.2_b_0.75,AP,0.2021238765851222
+bm25_stemmed_test_k1_1.2_b_0.75,P@20,0.17100000000000004
+bm25_stemmed_test_k1_1.2_b_0.75,nDCG@20,0.38915763816312837

@@ -1,0 +1,33 @@
+{
+  "variant": "original",
+  "split": "validation",
+  "optimize": "AP",
+  "best": {
+    "variant": "original",
+    "split": "validation",
+    "k1": 1.2,
+    "b": 0.75,
+    "P@1": 0.46,
+    "P@10": 0.22900000000000006,
+    "P@20": 0.16450000000000004,
+    "AP": 0.16651676784840053,
+    "nDCG@20": 0.3470155675480746,
+    "build_seconds": 10.689599124998495,
+    "total_query_seconds": 118.30536791899067,
+    "avg_query_seconds": 1.1830536791899067,
+    "used_cached_documents": true,
+    "used_cached_queries": false,
+    "preprocess_seconds": 4.178230083998642
+  },
+  "summary_csv": "dz2/artifacts/bm25_tuning/bm25_tuning_original_validation.csv",
+  "best_run_path": "dz2/artifacts/bm25_tuning/bm25_tuning_original_validation_best_run.trec",
+  "grid_size": 4,
+  "k1_values": [
+    1.2,
+    1.5
+  ],
+  "b_values": [
+    0.6,
+    0.75
+  ]
+}

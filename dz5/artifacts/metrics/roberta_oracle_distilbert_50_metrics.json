@@ -1,0 +1,38 @@
+{
+  "prediction_file": "artifacts/predictions/roberta_oracle_distilbert_50.jsonl",
+  "count": 50,
+  "aggregate": {
+    "squad_em": 0.62,
+    "squad_f1": 0.7630769230769229,
+    "mirage_em_strict": 0.62,
+    "mirage_em_loose": 0.86
+  },
+  "by_source": {
+    "popqa": {
+      "count": 50,
+      "squad_em": 0.62,
+      "squad_f1": 0.7630769230769229,
+      "mirage_em_strict": 0.62,
+      "mirage_em_loose": 0.86
+    }
+  },
+  "bootstrap_ci": {
+    "squad_em": {
+      "low": 0.5,
+      "high": 0.76
+    },
+    "squad_f1": {
+      "low": 0.66995,
+      "high": 0.8480102564102564
+    },
+    "mirage_em_strict": {
+      "low": 0.5,
+      "high": 0.76
+    },
+    "mirage_em_loose": {
+      "low": 0.76,
+      "high": 0.94
+    }
+  },
+  "metric_note": "MIRAGE EM metrics use local fallback unless an official evaluator is wired in later."
+}

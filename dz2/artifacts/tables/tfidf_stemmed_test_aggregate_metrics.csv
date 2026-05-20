@@ -1,0 +1,6 @@
+run_id,measure,value
+tfidf_stemmed_test,nDCG@20,0.35937956088255535
+tfidf_stemmed_test,P@1,0.49
+tfidf_stemmed_test,P@20,0.15100000000000008
+tfidf_stemmed_test,P@10,0.21400000000000008
+tfidf_stemmed_test,AP,0.18356970693036215

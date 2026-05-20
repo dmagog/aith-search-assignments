@@ -1,0 +1,24 @@
+{
+  "paragraphs_csv": "dz2/artifacts/authors_search/paragraphs.csv",
+  "summary_csv": "dz2/artifacts/authors_search/paragraph_corpus_summary.csv",
+  "authors": [
+    {
+      "author": "dostoevsky",
+      "book": "The Brothers Karamazov",
+      "paragraphs": 3256,
+      "mean_tokens": 87.36,
+      "median_tokens_approx": 35,
+      "min_tokens": 12,
+      "max_tokens": 3451
+    },
+    {
+      "author": "tolstoy",
+      "book": "War and Peace",
+      "paragraphs": 8313,
+      "mean_tokens": 53.39,
+      "median_tokens_approx": 36,
+      "min_tokens": 12,
+      "max_tokens": 892
+    }
+  ]
+}

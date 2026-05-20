@@ -1,0 +1,18 @@
+{
+  "run_id": "tfidf_original_test",
+  "method": "tfidf",
+  "variant": "original",
+  "split": "test",
+  "documents": 99987,
+  "queries": 100,
+  "top_k": 1000,
+  "build_seconds": 5.531560625000566,
+  "preprocess_seconds": 3.8393306250000023,
+  "total_query_seconds": 5.666254585990828,
+  "avg_query_seconds": 0.05666254585990828,
+  "k1": null,
+  "b": null,
+  "used_cached_documents": false,
+  "used_cached_queries": false,
+  "run_path": "dz2/artifacts/runs/tfidf_original_test.trec"
+}

@@ -1,0 +1,21 @@
+{
+  "prediction_file": "artifacts/predictions/roberta_top1_dense_distilbert_smoke5.jsonl",
+  "count": 5,
+  "aggregate": {
+    "squad_em": 0.6,
+    "squad_f1": 0.6,
+    "mirage_em_strict": 0.6,
+    "mirage_em_loose": 0.6
+  },
+  "by_source": {
+    "popqa": {
+      "count": 5,
+      "squad_em": 0.6,
+      "squad_f1": 0.6,
+      "mirage_em_strict": 0.6,
+      "mirage_em_loose": 0.6
+    }
+  },
+  "bootstrap_ci": {},
+  "metric_note": "MIRAGE EM metrics use local fallback unless an official evaluator is wired in later."
+}

@@ -1,0 +1,4 @@
+experiment_id,count,squad_em,squad_f1,mirage_em_strict,mirage_em_loose
+roberta_oracle_distilbert_50,50,0.62,0.7630769230769229,0.62,0.86
+roberta_top1_mixture_distilbert_50,50,0.46,0.5230769230769231,0.46,0.58
+roberta_top1_dense_distilbert_50,50,0.42,0.48307692307692307,0.42,0.54

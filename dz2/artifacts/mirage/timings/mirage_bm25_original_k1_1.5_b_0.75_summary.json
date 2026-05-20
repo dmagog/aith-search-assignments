@@ -1,0 +1,13 @@
+{
+  "run_id": "mirage_bm25_original_k1_1.5_b_0.75",
+  "method": "bm25",
+  "variant": "original",
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 37799,
+  "queries": 7560,
+  "preprocess_seconds": 1.208511416989495,
+  "build_seconds": 7.466426416998729,
+  "avg_query_seconds": 0.0010832894566144286,
+  "run_path": "dz2/artifacts/mirage/runs/mirage_bm25_original_k1_1.5_b_0.75.trec"
+}

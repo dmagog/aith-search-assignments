@@ -1,0 +1,16 @@
+{
+  "run_id": "bm25_stemmed_test_k1_1.5_b_0.75",
+  "method": "bm25",
+  "variant": "stemmed",
+  "split": "test",
+  "documents": 99987,
+  "queries": 100,
+  "top_k": 1000,
+  "build_seconds": 9.985592625002027,
+  "preprocess_seconds": 162.11210483299874,
+  "total_query_seconds": 30.88045016597971,
+  "avg_query_seconds": 0.3088045016597971,
+  "k1": 1.5,
+  "b": 0.75,
+  "run_path": "dz2/artifacts/runs/bm25_stemmed_test_k1_1.5_b_0.75.trec"
+}

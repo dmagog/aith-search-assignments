@@ -1,0 +1,26 @@
+{
+  "dataset": {
+    "name": "msrank_10k",
+    "train_rows": 10000,
+    "test_rows": 10000,
+    "features": 136,
+    "fit_queries": 79,
+    "validation_queries": 8,
+    "test_queries": 88
+  },
+  "model": {
+    "loss_function": "YetiRank",
+    "eval_metric": "NDCG:top=10",
+    "best_iteration": 25
+  },
+  "validation_metrics": {
+    "ap": 0.6314593901451255,
+    "ndcg@10": 0.4163724261186273,
+    "ndcg@20": 0.4557851006866134
+  },
+  "test_metrics": {
+    "ap": 0.5618700880958237,
+    "ndcg@10": 0.39896936649074033,
+    "ndcg@20": 0.43855514396030576
+  }
+}

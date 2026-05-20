@@ -1,0 +1,13 @@
+{
+  "run_id": "mirage_bm25_lemmatized_k1_1.5_b_0.75",
+  "method": "bm25",
+  "variant": "lemmatized",
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 37799,
+  "queries": 7560,
+  "preprocess_seconds": 60.583622125006514,
+  "build_seconds": 6.545986540993908,
+  "avg_query_seconds": 0.0013397908121602741,
+  "run_path": "dz2/artifacts/mirage/runs/mirage_bm25_lemmatized_k1_1.5_b_0.75.trec"
+}

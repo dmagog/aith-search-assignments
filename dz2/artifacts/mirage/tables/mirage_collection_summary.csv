@@ -1,0 +1,2 @@
+queries,documents,qrels,mean_query_length_words,mean_relevant_passages,mean_pool_size
+7560,37799,9268,8.74,1.23,5.0

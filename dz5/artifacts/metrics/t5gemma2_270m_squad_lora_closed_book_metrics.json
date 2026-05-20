@@ -1,0 +1,59 @@
+{
+  "prediction_file": "C:\\Users\\Georgy\\Source\\dz5\\artifacts\\predictions\\t5gemma2_270m_squad_lora_closed_book.jsonl",
+  "count": 1000,
+  "aggregate": {
+    "squad_em": 0.0,
+    "squad_f1": 0.00075,
+    "mirage_f1": 0.0005674603174603175,
+    "mirage_em_strict": 0.0,
+    "mirage_em_loose": 0.001,
+    "bertscore_f1": 0.012183135583996772,
+    "bertscore_model": "bert-base-uncased",
+    "bertscore_batch_size": 32,
+    "bertscore_local_files_only": false
+  },
+  "by_source": {
+    "drop": {
+      "count": 10,
+      "squad_em": 0.0,
+      "squad_f1": 0.0,
+      "mirage_f1": 0.0,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.0
+    },
+    "ifqa": {
+      "count": 33,
+      "squad_em": 0.0,
+      "squad_f1": 0.0,
+      "mirage_f1": 0.0,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.0
+    },
+    "naturalqa": {
+      "count": 473,
+      "squad_em": 0.0,
+      "squad_f1": 0.00021141649048625794,
+      "mirage_f1": 0.0006711634618611363,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.0
+    },
+    "popqa": {
+      "count": 407,
+      "squad_em": 0.0,
+      "squad_f1": 0.0015970515970515971,
+      "mirage_f1": 0.0006142506142506142,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.002457002457002457
+    },
+    "triviaqa": {
+      "count": 77,
+      "squad_em": 0.0,
+      "squad_f1": 0.0,
+      "mirage_f1": 0.0,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.0
+    }
+  },
+  "bootstrap_ci": {},
+  "metric_note": "MIRAGE F1/EM metrics reproduce the official nlpai-lab/MIRAGE LLM_Evaluator formulas from LLM.py: lowercase-only matching, EM_loose = any gold answer substring in prediction, EM_strict = exact lowercase string match, F1 over token sets."
+}

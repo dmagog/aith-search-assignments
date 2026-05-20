@@ -1,0 +1,152 @@
+{
+  "dataset": {
+    "queries_total": 7560,
+    "pairs_total": 37800,
+    "unique_passages": 36950
+  },
+  "split_summary": [
+    {
+      "split": "test",
+      "source": "drop",
+      "queries": 15
+    },
+    {
+      "split": "test",
+      "source": "ifqa",
+      "queries": 50
+    },
+    {
+      "split": "test",
+      "source": "naturalqa",
+      "queries": 716
+    },
+    {
+      "split": "test",
+      "source": "popqa",
+      "queries": 615
+    },
+    {
+      "split": "test",
+      "source": "triviaqa",
+      "queries": 117
+    },
+    {
+      "split": "train",
+      "source": "drop",
+      "queries": 54
+    },
+    {
+      "split": "train",
+      "source": "ifqa",
+      "queries": 178
+    },
+    {
+      "split": "train",
+      "source": "naturalqa",
+      "queries": 2576
+    },
+    {
+      "split": "train",
+      "source": "popqa",
+      "queries": 2214
+    },
+    {
+      "split": "train",
+      "source": "triviaqa",
+      "queries": 420
+    },
+    {
+      "split": "validation",
+      "source": "drop",
+      "queries": 6
+    },
+    {
+      "split": "validation",
+      "source": "ifqa",
+      "queries": 20
+    },
+    {
+      "split": "validation",
+      "source": "naturalqa",
+      "queries": 286
+    },
+    {
+      "split": "validation",
+      "source": "popqa",
+      "queries": 246
+    },
+    {
+      "split": "validation",
+      "source": "triviaqa",
+      "queries": 47
+    }
+  ],
+  "results": [
+    {
+      "model_key": "lexical_only",
+      "model_name": "\u041b\u0435\u043a\u0441\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043c\u043e\u0434\u0435\u043b\u044c \u0440\u0430\u043d\u0436\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
+      "feature_columns": [
+        "query_length",
+        "body_length",
+        "body_matches",
+        "body_coverage_ratio",
+        "body_sum_tf",
+        "body_max_tf",
+        "body_mean_tf",
+        "body_sum_idf",
+        "body_max_idf",
+        "body_best_span",
+        "body_span_reciprocal"
+      ],
+      "best_iteration": 41,
+      "validation_metrics": {
+        "ap": 0.6717516069788797,
+        "ndcg@3": 0.6775334341560445,
+        "ndcg@5": 0.7581330135893021
+      },
+      "test_metrics": {
+        "ap": 0.6979611882206066,
+        "ndcg@3": 0.7041909283768432,
+        "ndcg@5": 0.7777435041424807
+      }
+    },
+    {
+      "model_key": "enhanced_with_wiki_signals",
+      "model_name": "\u041c\u043e\u0434\u0435\u043b\u044c \u0441 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430\u043c\u0438 \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0430, \u0442\u0435\u043a\u0441\u0442\u0430 \u0438 \u0441\u0438\u0433\u043d\u0430\u043b\u0430\u043c\u0438 Wikipedia",
+      "feature_columns": [
+        "query_length",
+        "title_length",
+        "body_length",
+        "title_matches",
+        "body_matches",
+        "title_coverage_ratio",
+        "body_coverage_ratio",
+        "title_sum_tf",
+        "title_max_tf",
+        "body_sum_tf",
+        "body_max_tf",
+        "body_mean_tf",
+        "body_sum_idf",
+        "body_max_idf",
+        "body_best_span",
+        "body_span_reciprocal",
+        "title_exact_fraction",
+        "log_pageviews_sum_12m",
+        "pageviews_mean_12m",
+        "log_incoming_links",
+        "redirects"
+      ],
+      "best_iteration": 289,
+      "validation_metrics": {
+        "ap": 0.7306932966023875,
+        "ndcg@3": 0.7431659011497473,
+        "ndcg@5": 0.8020476287778154
+      },
+      "test_metrics": {
+        "ap": 0.7356420283469194,
+        "ndcg@3": 0.7470666100723616,
+        "ndcg@5": 0.8055120679385931
+      }
+    }
+  ]
+}

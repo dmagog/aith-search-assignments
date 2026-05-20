@@ -1,0 +1,20 @@
+{
+  "run_id": "tfidf_lemmatized_test",
+  "split": "test",
+  "qrels_path": "dz1/dz1/wikIR1k/wikIR1k/test/qrels",
+  "run_path": "dz2/artifacts/runs/tfidf_lemmatized_test.trec",
+  "measures": [
+    "P@1",
+    "P@10",
+    "P@20",
+    "AP",
+    "nDCG@20"
+  ],
+  "aggregate": {
+    "nDCG@20": 0.3502504093389465,
+    "P@20": 0.15000000000000005,
+    "P@10": 0.212,
+    "P@1": 0.46,
+    "AP": 0.18123546106272326
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "mirage_tfidf_lemmatized",
+  "method": "tfidf",
+  "variant": "lemmatized",
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 37799,
+  "queries": 7560,
+  "preprocess_seconds": 57.965534292001394,
+  "build_seconds": 6.212405916987336,
+  "avg_query_seconds": 0.0016153649704907492,
+  "run_path": "dz2/artifacts/mirage/runs/mirage_tfidf_lemmatized.trec"
+}

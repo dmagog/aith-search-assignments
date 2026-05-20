@@ -1,0 +1,59 @@
+{
+  "prediction_file": "C:\\Users\\Georgy\\Source\\dz5\\artifacts\\predictions\\qwen2_5_1_5b_instruct_closed_book.jsonl",
+  "count": 1000,
+  "aggregate": {
+    "squad_em": 0.016,
+    "squad_f1": 0.06003444306139629,
+    "mirage_f1": 0.04939510817962907,
+    "mirage_em_strict": 0.015,
+    "mirage_em_loose": 0.026,
+    "bertscore_f1": 0.44850174939632415,
+    "bertscore_model": "bert-base-uncased",
+    "bertscore_batch_size": 32,
+    "bertscore_local_files_only": false
+  },
+  "by_source": {
+    "drop": {
+      "count": 10,
+      "squad_em": 0.0,
+      "squad_f1": 0.015384615384615385,
+      "mirage_f1": 0.014285714285714285,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.1
+    },
+    "ifqa": {
+      "count": 33,
+      "squad_em": 0.030303030303030304,
+      "squad_f1": 0.09722222222222221,
+      "mirage_f1": 0.09615765498118439,
+      "mirage_em_strict": 0.030303030303030304,
+      "mirage_em_loose": 0.030303030303030304
+    },
+    "naturalqa": {
+      "count": 473,
+      "squad_em": 0.006342494714587738,
+      "squad_f1": 0.07406516962955276,
+      "mirage_f1": 0.07374290331267394,
+      "mirage_em_strict": 0.006342494714587738,
+      "mirage_em_loose": 0.019027484143763214
+    },
+    "popqa": {
+      "count": 407,
+      "squad_em": 0.02702702702702703,
+      "squad_f1": 0.04457899457899458,
+      "mirage_f1": 0.02190312056622217,
+      "mirage_em_strict": 0.02702702702702703,
+      "mirage_em_loose": 0.03194103194103194
+    },
+    "triviaqa": {
+      "count": 77,
+      "squad_em": 0.012987012987012988,
+      "squad_f1": 0.045399838256981115,
+      "mirage_f1": 0.02966344266293054,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.025974025974025976
+    }
+  },
+  "bootstrap_ci": {},
+  "metric_note": "MIRAGE F1/EM metrics reproduce the official nlpai-lab/MIRAGE LLM_Evaluator formulas from LLM.py: lowercase-only matching, EM_loose = any gold answer substring in prediction, EM_strict = exact lowercase string match, F1 over token sets."
+}

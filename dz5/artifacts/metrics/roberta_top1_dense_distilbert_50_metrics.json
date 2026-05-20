@@ -1,0 +1,38 @@
+{
+  "prediction_file": "artifacts/predictions/roberta_top1_dense_distilbert_50.jsonl",
+  "count": 50,
+  "aggregate": {
+    "squad_em": 0.42,
+    "squad_f1": 0.48307692307692307,
+    "mirage_em_strict": 0.42,
+    "mirage_em_loose": 0.54
+  },
+  "by_source": {
+    "popqa": {
+      "count": 50,
+      "squad_em": 0.42,
+      "squad_f1": 0.48307692307692307,
+      "mirage_em_strict": 0.42,
+      "mirage_em_loose": 0.54
+    }
+  },
+  "bootstrap_ci": {
+    "squad_em": {
+      "low": 0.2995,
+      "high": 0.5405000000000002
+    },
+    "squad_f1": {
+      "low": 0.34015000000000006,
+      "high": 0.6093500000000001
+    },
+    "mirage_em_strict": {
+      "low": 0.2995,
+      "high": 0.5405000000000002
+    },
+    "mirage_em_loose": {
+      "low": 0.3995,
+      "high": 0.68
+    }
+  },
+  "metric_note": "MIRAGE EM metrics use local fallback unless an official evaluator is wired in later."
+}

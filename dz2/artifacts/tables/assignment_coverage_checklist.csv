@@ -1,0 +1,8 @@
+requirement,status,evidence
+Basic statistics for test queries,done,report section 4 + test_queries_audit.csv + test_qrels_per_query.csv
+6 baseline runs for tf-idf/BM25 x original/stemmed/lemmatized,done,baseline_results_summary.csv + artifacts/runs/*.trec
+Execution time estimates,done,baseline_results_summary.csv + experiment_summary.csv
+TREC run format outputs,done,artifacts/runs/*.trec
+"Evaluation with P@1, P@10, P@20, MAP, nDCG@20",done,aggregate/per-query metric CSVs + report sections 5 and 6
+Analysis of easy/hard queries and query properties,done,report section 7 + per-query analysis CSVs
+BM25 tuning on validation and comparison on test,done,bm25_tuning_best_params_summary.csv + bm25_default_vs_tuned_summary.csv

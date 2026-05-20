@@ -1,0 +1,6 @@
+run_id,measure,value
+tfidf_lemmatized_test,nDCG@20,0.3502504093389465
+tfidf_lemmatized_test,P@20,0.15000000000000005
+tfidf_lemmatized_test,P@10,0.212
+tfidf_lemmatized_test,P@1,0.46
+tfidf_lemmatized_test,AP,0.18123546106272326

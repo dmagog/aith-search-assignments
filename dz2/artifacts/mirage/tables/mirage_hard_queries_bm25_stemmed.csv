@@ -1,0 +1,16 @@
+query_id,AP,P@1,P@10,P@20,nDCG@20,source,query_length_words,relevant_passages,pool_size,query,length_bucket
+007dc247-272e-475c-96c2-5479c1df1d95,0.0,0.0,0.0,0.0,0.0,naturalqa,9,1,5,who is the director of lord of the rings,6-10
+0083a85a-6c8e-41ab-9bad-0bffb78e75ab,0.0,0.0,0.0,0.0,0.0,naturalqa,8,1,5,who wrote like a fox on the run,6-10
+0085a069-c8c1-4a78-9074-0f17d2073f9c,0.0,0.0,0.0,0.0,0.0,popqa,6,1,5,Who was the director of Home?,6-10
+00bdf195-a662-411d-9b1f-e03d702e1296,0.0,0.0,0.0,0.0,0.0,drop,6,1,5,What was done to the Wayuus?,6-10
+00bdf3e8-1e81-4fe8-8564-0043a56cec48,0.0,0.0,0.0,0.0,0.0,popqa,6,1,5,Who was the director of Style?,6-10
+00c2befc-9313-4f1d-a469-6d4780fdc424,0.0,0.0,0.0,0.0,0.0,popqa,7,1,5,Who is the author of No Connection?,6-10
+0189c0a8-88a8-4785-a639-b0904cde3f2f,0.0,0.0,0.0,0.0,0.0,popqa,6,1,5,Who is the author of Ponies?,6-10
+018a5779-9152-4555-909c-4d7a12421ba0,0.0,0.0,0.0,0.0,0.0,naturalqa,7,1,5,who sang i was kaiser bill's batman,6-10
+020907fa-adb4-494c-9339-e4dae5cf6ec2,0.0,0.0,0.0,0.0,0.0,popqa,7,1,5,Who was the director of New Mexico?,6-10
+0274dd0c-15bc-4753-89d8-250c96d82faa,0.0,0.0,0.0,0.0,0.0,naturalqa,10,1,5,who was named india crickter of the century by wisden,6-10
+027d1401-12b9-4f38-8deb-9ffaad7a7770,0.0,0.0,0.0,0.0,0.0,popqa,7,1,5,Who is the author of A Positive?,6-10
+02d24d0f-1f54-4b01-8077-0376e2d2e342,0.0,0.0,0.0,0.0,0.0,popqa,7,1,5,Who was the composer of The Bells?,6-10
+03757aa3-d324-4798-8a49-b9aec9977b0f,0.0,0.0,0.0,0.0,0.0,naturalqa,8,1,5,when did west brom fc change its name,6-10
+038ac98f-13c5-40a1-b341-ba08dc3b1786,0.0,0.0,0.0,0.0,0.0,popqa,6,1,5,Who was the producer of Fear?,6-10
+039f0018-73bf-4574-92cc-96f86d11f546,0.0,0.0,0.0,0.0,0.0,popqa,6,1,5,Who was the producer of Marc?,6-10

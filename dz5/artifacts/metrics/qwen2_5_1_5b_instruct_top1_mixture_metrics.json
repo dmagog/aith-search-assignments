@@ -1,0 +1,59 @@
+{
+  "prediction_file": "C:\\Users\\Georgy\\Source\\dz5\\artifacts\\predictions\\qwen2_5_1_5b_instruct_top1_mixture.jsonl",
+  "count": 1000,
+  "aggregate": {
+    "squad_em": 0.345,
+    "squad_f1": 0.45728327702301536,
+    "mirage_f1": 0.37646978266932185,
+    "mirage_em_strict": 0.328,
+    "mirage_em_loose": 0.429,
+    "bertscore_f1": 0.6605581963807344,
+    "bertscore_model": "bert-base-uncased",
+    "bertscore_batch_size": 32,
+    "bertscore_local_files_only": false
+  },
+  "by_source": {
+    "drop": {
+      "count": 10,
+      "squad_em": 0.0,
+      "squad_f1": 0.03888888888888889,
+      "mirage_f1": 0.03,
+      "mirage_em_strict": 0.0,
+      "mirage_em_loose": 0.1
+    },
+    "ifqa": {
+      "count": 33,
+      "squad_em": 0.48484848484848486,
+      "squad_f1": 0.5671717171717172,
+      "mirage_f1": 0.4829583369690321,
+      "mirage_em_strict": 0.42424242424242425,
+      "mirage_em_loose": 0.5757575757575758
+    },
+    "naturalqa": {
+      "count": 473,
+      "squad_em": 0.2748414376321353,
+      "squad_f1": 0.45895673922045666,
+      "mirage_f1": 0.43522633766969304,
+      "mirage_em_strict": 0.25158562367864695,
+      "mirage_em_loose": 0.37420718816067655
+    },
+    "popqa": {
+      "count": 407,
+      "squad_em": 0.3882063882063882,
+      "squad_f1": 0.43234039370403005,
+      "mirage_f1": 0.3179800490380671,
+      "mirage_em_strict": 0.3882063882063882,
+      "mirage_em_loose": 0.4520884520884521
+    },
+    "triviaqa": {
+      "count": 77,
+      "squad_em": 0.5324675324675324,
+      "squad_f1": 0.5860862802421244,
+      "mirage_f1": 0.3240548035465674,
+      "mirage_em_strict": 0.4805194805194805,
+      "mirage_em_loose": 0.6233766233766234
+    }
+  },
+  "bootstrap_ci": {},
+  "metric_note": "MIRAGE F1/EM metrics reproduce the official nlpai-lab/MIRAGE LLM_Evaluator formulas from LLM.py: lowercase-only matching, EM_loose = any gold answer substring in prediction, EM_strict = exact lowercase string match, F1 over token sets."
+}

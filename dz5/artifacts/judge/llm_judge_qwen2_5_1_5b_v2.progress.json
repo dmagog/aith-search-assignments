@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "updated_at_utc": "2026-04-22T18:01:45.698857+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "device": "cuda",
+  "tasks_total": 4000,
+  "tasks_completed": 14000,
+  "tasks_remaining": 0,
+  "percent": 350.0,
+  "elapsed_seconds": 169.65600000042468
+}

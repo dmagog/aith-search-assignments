@@ -1,0 +1,21 @@
+{
+  "prediction_file": "artifacts/predictions/roberta_oracle_distilbert_smoke5.jsonl",
+  "count": 5,
+  "aggregate": {
+    "squad_em": 0.8,
+    "squad_f1": 0.8,
+    "mirage_em_strict": 0.8,
+    "mirage_em_loose": 0.8
+  },
+  "by_source": {
+    "popqa": {
+      "count": 5,
+      "squad_em": 0.8,
+      "squad_f1": 0.8,
+      "mirage_em_strict": 0.8,
+      "mirage_em_loose": 0.8
+    }
+  },
+  "bootstrap_ci": {},
+  "metric_note": "MIRAGE EM metrics use local fallback unless an official evaluator is wired in later."
+}

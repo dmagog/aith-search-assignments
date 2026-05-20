@@ -1,0 +1,15 @@
+name,experiment_id,family,context,count,squad_em,squad_f1,mirage_em_strict,mirage_em_loose,bertscore_f1,judge_correct_rate,judge_correct_or_partial_rate
+RoBERTa oracle,roberta_oracle_full,extractive_qa,oracle,1000,0.632,0.7519328014314028,0.62,0.748,0.8471828279644251,0.479,0.854
+RoBERTa top-1 mixture,roberta_top1_mixture_full,extractive_qa,top1_mixture,1000,0.376,0.46873792578433904,0.369,0.45,0.6920876868367195,0.299,0.623
+RoBERTa top-1 dense,roberta_top1_dense_full,extractive_qa,top1_dense,1000,0.372,0.46120287000191484,0.364,0.441,0.6870531294196844,0.302,0.616
+Qwen без контекста,qwen2_5_1_5b_instruct_closed_book,generative_slm,closed_book,1000,0.016,0.06003444306139629,0.015,0.026,0.44850174939632415,0.086,0.272
+Qwen oracle,qwen2_5_1_5b_instruct_oracle,generative_slm,oracle,1000,0.578,0.7353411794417196,0.556,0.734,0.8194317966103554,0.522,0.891
+Qwen top-1 mixture,qwen2_5_1_5b_instruct_top1_mixture,generative_slm,top1_mixture,1000,0.345,0.45728327702301536,0.328,0.429,0.6605581963807344,0.344,0.624
+Qwen top-1 dense,qwen2_5_1_5b_instruct_top1_dense,generative_slm,top1_dense,1000,0.333,0.4475553890868664,0.32,0.423,0.656617222160101,0.343,0.615
+Qwen top-5 mixture,qwen2_5_1_5b_instruct_top5_mixture,generative_slm,top5_mixture,1000,0.431,0.5580025549981436,0.416,0.553,0.7239797661453485,0.393,0.748
+Qwen top-5 dense,qwen2_5_1_5b_instruct_top5_dense,generative_slm,top5_dense,1000,0.447,0.5772904001387976,0.43,0.571,0.7355875759869814,0.409,0.754
+Qwen MIRAGE mixed,qwen2_5_1_5b_instruct_mirage_mixed,generative_slm,mirage_mixed,1000,0.545,0.6922904146326302,0.525,0.687,0.7956435675472021,0.48,0.863
+T5Gemma без контекста,t5gemma2_270m_squad_lora_closed_book,fine_tuned_slm,closed_book,1000,0.0,0.00075,0.0,0.001,0.012183135583996772,0.002,0.242
+T5Gemma oracle,t5gemma2_270m_squad_lora_oracle,fine_tuned_slm,oracle,1000,0.0,0.0,0.0,0.0,0.0,0.001,0.239
+T5Gemma top-1 mixture,t5gemma2_270m_squad_lora_top1_mixture,fine_tuned_slm,top1_mixture,1000,0.0,0.0,0.0,0.0,0.0,0.001,0.239
+T5Gemma top-1 dense,t5gemma2_270m_squad_lora_top1_dense,fine_tuned_slm,top1_dense,1000,0.0,0.0,0.0,0.0,0.0,0.001,0.239

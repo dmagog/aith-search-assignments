@@ -1,0 +1,18 @@
+{
+  "run_id": "bm25_original_test_k1_1.2_b_0.75",
+  "method": "bm25",
+  "variant": "original",
+  "split": "test",
+  "documents": 99987,
+  "queries": 100,
+  "top_k": 1000,
+  "build_seconds": 9.646500958002434,
+  "preprocess_seconds": 3.8196327920013573,
+  "total_query_seconds": 109.1438640869892,
+  "avg_query_seconds": 1.091438640869892,
+  "k1": 1.2,
+  "b": 0.75,
+  "used_cached_documents": true,
+  "used_cached_queries": true,
+  "run_path": "dz2/artifacts/runs/bm25_original_test_k1_1.2_b_0.75.trec"
+}
